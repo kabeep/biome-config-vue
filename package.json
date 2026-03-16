@@ -1,0 +1,22 @@
+{
+  "name": "biome-config-vue",
+  "version": "1.0.0",
+  "description": "A streamlined, production-ready Biome configuration template tailored for Vue 3 projects",
+  "author": "Jason Zhang (kabeep)",
+  "homepage": "https://github.com/kabeep/biome-config-vue#readme",
+  "repository": "git@github.com:kabeep/biome-config-vue.git",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "lint:write": "biome check src --write",
+    "lint:staged": "biome check src --write --staged",
+    "lint:changed": "biome check src --write --changed",
+    "lint-staged": "lint-staged",
+    "pretest": "npm run lint",
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.2",
+  }
+}

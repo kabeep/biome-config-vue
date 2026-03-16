@@ -1,0 +1,127 @@
+{
+  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "dev"
+  },
+  "files": {
+    "includes": ["src/**/*.{vue,ts,js,css,less}", "!!**/dist"],
+    "ignoreUnknown": true,
+    "maxSize": 1048576
+  },
+  "linter": {
+    "enabled": true,
+    "includes": ["**"],
+    "rules": {
+      "a11y": "info",
+      "complexity": {
+        "recommended": true,
+        "noExcessiveLinesPerFunction": {
+          "level": "info",
+          "options": {
+            "maxLines": 120,
+            "skipBlankLines": true
+          }
+        },
+        "noImportantStyles": "info"
+      },
+      "correctness": {
+        "recommended": true,
+        "useImportExtensions": "off",
+        "useQwikValidLexicalScope": "off",
+        "noUnknownPseudoClass": "off",
+        "noUnusedImports": "error",
+        "noUnknownTypeSelector": "off"
+      },
+      "nursery": {
+        "recommended": true,
+        "noEqualsToNull": "off"
+      },
+      "performance": {
+        "recommended": true,
+        "noAccumulatingSpread": "warn"
+      },
+      "security": {
+        "recommended": true,
+        "noSecrets": "off"
+      },
+      "style": {
+        "recommended": true,
+        "noUnusedTemplateLiteral": "off"
+      },
+      "suspicious": {
+        "recommended": true,
+        "noBitwiseOperators": "off",
+        "noExplicitAny": "off",
+        "noUnknownAtRules": "off",
+        "noConfusingVoidType": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "includes": ["**"],
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "attributePosition": "auto",
+    "bracketSpacing": true,
+    "expand": "auto"
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineWidth": 120,
+      "lineEnding": "lf",
+      "jsxQuoteStyle": "single",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "quoteProperties": "asNeeded",
+      "arrowParentheses": "always",
+      "attributePosition": "auto",
+      "expand": "auto"
+    }
+  },
+  "html": {
+    "experimentalFullSupportEnabled": true
+  },
+  "css": {
+    "formatter": {
+      "enabled": false,
+      "lineWidth": 120,
+      "quoteStyle": "double"
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["src/**/*.vue"],
+      "linter": {},
+      "javascript": {
+        "globals": [
+          "defineEmits",
+          "defineProps",
+          "defineExpose",
+          "defineModel",
+          "defineOptions",
+          "defineSlots",
+          "withDefaults"
+        ]
+      }
+    }
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}
