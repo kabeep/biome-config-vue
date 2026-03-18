@@ -49,6 +49,7 @@
       },
       "style": {
         "recommended": true,
+        "useConsistentTypeDefinitions": "off",
         "noUnusedTemplateLiteral": "off"
       },
       "suspicious": {
