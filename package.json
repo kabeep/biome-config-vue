@@ -12,11 +12,11 @@
     "lint:staged": "biome check src --write --staged",
     "lint:changed": "biome check src --write --changed",
     "lint-staged": "lint-staged",
-    "pretest": "npm run lint",
+    "pretest": "npm run lint"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.6",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.2",
+    "lint-staged": "^16.3.2"
   }
 }
