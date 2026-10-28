@@ -13,7 +13,7 @@ Click the green **"Use this template"** button at the top of this page to create
 If you already have a project, you can pull this configuration directly:
 
 ```bash
-curl -O https://raw.githubusercontent.com/kabeep/biome-config-vue/main/biome.jsonc
+curl -O https://raw.githubusercontent.com/kabeep/biome-config-vue/refs/heads/master/biome.json
 ```
 
 ## 🛠 Features
